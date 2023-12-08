@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<head>
+  <style>
+    /* Style pour la date à l'intérieur du conteneur */
+    .date {
+        font-weight: bold;
+        text-align: left;
+        margin-bottom: 8px;
+        display: block;
+        font-size: 28px;
+        line-height:34px;
+        font-family: "Sofia Sans Condensed";
+    }
+    
+    /* Styles pour le conteneur de l'année */
+    .year-container {
+        padding: 45px 5%;
+        background: #FFF;
+        border-radius: 20px; 
+        box-shadow: 0 3px 20px #25283D1A;
+        margin-left: 20%;
+    }
+    
+    .year {
+        display: flex;
+        flex-direction: column; /* Changez l'orientation pour permettre la date au-dessus du contenu */
+        align-items: center; /* Centre le contenu */
+        width: 100%;
+        position: relative; /* Nécessaire pour le positionnement absolu de la date */
+    }
+    
+    .value-container ul{
+    margin-bottom:0px;
+    margin-top:0px!important;
+    padding-left:1em;
+    }
+    .value-container ul li{
+    margin-bottom:16px;
+    
+    }
+    .value-container ul li:last-child{
+    margin-bottom: 0px;
+    }
+    
+    /*Timeline*/
+    .timeline::before{
+    width: 2px;
+    height:78%;
+    position: absolute;
+    left: 0px;
+    content: "";
+    background: #DDD;
+    }
+    .year{
+    display: flex;
+    flex-direction:row;
+    width:100%;
+    margin-left:auto;
+    margin-right:0px;
+    margin-bottom: 96px;
+    position: relative;
+    }
+    .year::before{
+    content:"";
+    position: absolute;
+    left:-13px;
+    top:-1px;
+    border-radius: 100%;
+    width: 28px;
+    height:28px;
+    
+    }
+    .year#uno::before{
+        background:#64A3EB;
+    }
+    .year#dos::before{
+        background:#64A3EB;
+    }
+    .year#tres::before{
+        background:#64A3EB;
+    }
+    .year#quattro::before{
+        background:#64A3EB;
+    }
+    .year#cinco::before{
+        background:#64A3EB;
+    }
+    .year span{
+    font-weight: bold;
+    text-align: left;
+    width:10%;
+    margin-left:10%;
+    }
+    .year div{
+    width:80%;
+    }
+    
+    @media all and (max-width:1024px){
+    .year{
+    margin-bottom: 80px;
+    }
+    .year span{
+    margin-left:40px;
+    }
+    .year div{
+    width:calc(90% - 24px);
+    }
+    }
+    @media all and (max-width:767px){
+    .year{
+    display: flex;
+    flex-direction: column;
+    }
+    .year span{
+    width:100%;
+    padding-left:40px;
+    }
+    .year div.year-container{
+    $}
+    .year span{
+    margin-left:0px;
+    margin-bottom: 16px;
+    }
+    .timeline::before{
+    height:81%!important;
+    }
+    }
+  </style>
+</head>
+<body>
+  <div class="timeline">
+      <div class="year" id="uno">
+          <div class="year-container">
+              <div class="date">Août 2023 à aujourd'hui</div>
+              <p>Développeur chez Standout</p>
+          </div>
+      </div>
+      <div class="year" id="dos">
+          <div class="year-container">
+              <div class="date">Septembre 2022 à août 2023</div>
+              <p>Chef de projet IT & Digital chez Hutchinson aerospace services</p>
+          </div>
+      </div>
+      <div class="year" id="tres">
+          <div class="year-container">
+              <div class="date">Janvier 2023 à octobre 2023</div>
+              <p>Co-fondateur de l'agence Lupy web</p>
+          </div>
+      </div>
+      <div class="year" id="quattro">
+          <div class="year-container">
+              <div class="date">Novembre 2022 à octobre 2023 2024</div>
+              <p>Chef de projet digital pour l'association Alumni4e</p>
+          </div>
+      </div>
+      <div class="year" id="quattro">
+          <div class="year-container">
+              <div class="date">Février 2022 à novembre 2022</div>
+              <p>Président du BDE d'Epitech Toulouse</p>
+          </div>
+      </div>
+      <div class="year" id="quattro">
+          <div class="year-container">
+              <div class="date">Novembre 2020 à juillet 2022</div>
+              <p>Co-fondateur du projet de Startup Oethia, plateforme de mise en relation entre particuliers pour fourniture de services.</p>
+          </div>
+      </div>
+      <div class="year" id="quattro">
+          <div class="year-container">
+              <div class="date">Juillet 2017 à septembre 2021</div>
+              <p>Intérimaire pour la société Corsanim</p>
+          </div>
+      </div>
+    <div class="year" id="quattro">
+          <div class="year-container">
+              <div class="date">2019</div>
+              <p>Assistant directeur des systèmes d'informations</p>
+          </div>
+      </div>
+  </div>
+</body>
